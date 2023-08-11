@@ -1,27 +1,26 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - main function is mainly for entries.
+ * main - main function is for entry
  *
- * Return: return to 0 is success.
+ * Return: return 0 is success
  */
 
 int main(void)
 {
 	int n;
 
-	int a;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	a = n % 10;
-	if (a > 5)
-		printf("Last digit of %d is %d and greater than 5\n", n, a);
-	if (a == 0)
-		printf("Last digit of %d is %d and is 0\n", n, n, a);
+	m = n % 10;
+	if (m > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
+	if (m == 0)
+		printf("Last digit of %d id %d and is 0\n", n, m);
 	if (m < 6 && m != 0)
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
 	return (0);
 }
