@@ -1,17 +1,23 @@
 #include <stdio.h>
 /**
- * main - main function.
- * Return: return 0 to success.
+ * main - main function is for entries.
+ * Description 'print alphabets except q and e'
+ * Return: return 0 is success.
  */
 
 int main(void)
 {
-	int n;
+	int n = 97;
 
-	for (n = 0; n <= 9; n++)
+	while (n <= 122)
 	{
-		printf("%d", n);
+		if (n == 101 || n == 113)
+		{n++;
+			continue;
+		}
+		putchar(n);
+		n++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
