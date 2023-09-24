@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * _memcpy - a function that copies memory area.
- * @dest: memory where is stored
- * @src: memory where is copied.
- * @n: number of bytes.
+ *_memcpy - this is a function that copies the memory area.
+ *@dest: memory where is stored.
+ *@src: memory where is copied.
+ *@n: number of bytes.
  *
- * Return: copies memory with n bytes changed.
+ *Return: copied memory with n byted changedd.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int r = 0;
-	int i = n;
+	int o = 0;
+	int u = n;
 
-	for (; r < i; r++)
+	for (; o < u; o++)
 	{
-		dest[r] = src[r];
+		dest[o] = src[o];
 		n--;
 	}
 	return (dest);
